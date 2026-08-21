@@ -1,16 +1,17 @@
 /* ============================================
    MAIN.JS — Interactions, Animations, Logic
-   NexFrame Portfolio
+   Agency Template
 ============================================ */
 
 // ---- Custom Cursor ----
 const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursor-ring');
+const canUseCustomCursor = cursor && cursorRing && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
 let cursorX = 0, cursorY = 0;
 let ringX = 0, ringY = 0;
 
-document.addEventListener('mousemove', (e) => {
+if (canUseCustomCursor) document.addEventListener('mousemove', (e) => {
   cursorX = e.clientX;
   cursorY = e.clientY;
   cursor.style.left = cursorX + 'px';
@@ -24,13 +25,13 @@ function animateRing() {
   cursorRing.style.top  = ringY + 'px';
   requestAnimationFrame(animateRing);
 }
-animateRing();
+if (canUseCustomCursor) animateRing();
 
-document.addEventListener('mouseleave', () => {
+if (canUseCustomCursor) document.addEventListener('mouseleave', () => {
   cursor.style.opacity = '0';
   cursorRing.style.opacity = '0';
 });
-document.addEventListener('mouseenter', () => {
+if (canUseCustomCursor) document.addEventListener('mouseenter', () => {
   cursor.style.opacity = '1';
   cursorRing.style.opacity = '1';
 });
@@ -68,15 +69,17 @@ if (hamburger && mobileNav && nav) {
 }
 // ---- Reveal on scroll ----
 const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-const revealObserver = new IntersectionObserver((entries) => {
+const revealObserver = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }) : null;
 
-revealEls.forEach(el => revealObserver.observe(el));
+if (revealObserver) revealEls.forEach(el => revealObserver.observe(el));
+else revealEls.forEach(el => el.classList.add('visible'));
 
 // ---- Active nav link on scroll ----
 const sections = document.querySelectorAll('section[id]');

@@ -1,6 +1,6 @@
 /* ============================================
    SECTIONS.CSS — Services, Projects, About, Contact
-   NexFrame Portfolio
+   Agency Template
 ============================================ */
 
 /* ---- Section shared styles ---- */
@@ -178,11 +178,12 @@
   background: var(--surface-2);
   padding: 3rem 2rem;
   display: flex;
-justify-content: center;
+  justify-content: center;
   align-items: center;
   text-align: center;
-
 }
+
+
 .about-intro {
   max-width: 850px;
 }

@@ -1,6 +1,6 @@
 /* ============================================
    NAV.CSS — Navigation & Custom Cursor
-   NexFrame Portfolio
+   Agency Template
 ============================================ */
 
 /* Custom Cursor */
@@ -13,6 +13,7 @@
   top: 0; left: 0;
   pointer-events: none;
   z-index: 99999;
+  visibility: hidden;
   transform: translate(-50%, -50%);
   transition: width 0.3s var(--ease-out), height 0.3s var(--ease-out), opacity 0.3s;
   mix-blend-mode: screen;
@@ -26,6 +27,7 @@
   top: 0; left: 0;
   pointer-events: none;
   z-index: 99998;
+  visibility: hidden;
   transform: translate(-50%, -50%);
   transition: width 0.5s var(--ease-out), height 0.5s var(--ease-out), border-color 0.3s;
 }
@@ -257,4 +259,7 @@ body:has(button:hover) #cursor-ring {
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
   }
+}
+@media (hover: hover) and (pointer: fine) {
+  #cursor, #cursor-ring { visibility: visible; }
 }

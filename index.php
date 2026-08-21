@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Nyxsen — Agência de desenvolvimento web, design edição de video e tecnologia. Transformamos ideias em produtos digitais de alto impacto." />
-    <title>Nyxsen</title>
+        content="Estúdio de estratégia, design e tecnologia para marcas que querem crescer no digital." />
+    <meta name="theme-color" content="#050505" />
+    <title>Estúdio Norte | Estratégia, design e tecnologia</title>
     <link rel="stylesheet" href="css/root.css" />
 </head>
 
@@ -23,15 +24,15 @@
         <div class="container">
             <div class="nav-inner">
                 <a href="index.php" class="nav-logo">
-                    <span class="logo-main">Nyxsen</span>
-                    <span class="logo-sub">Digital</span>
+                    <span class="logo-main">Estúdio Norte</span>
+                    <span class="logo-sub">Estratégia digital</span>
                 </a>
 
                 <div class="nav-links">
                     <a href="#services">Serviços</a>
                     <a href="#projects">Projetos</a>
                     <a href="#about">Processo</a>
-                    <a href="#testimonials">Clientes</a>
+                    <a href="#process">Processo</a>
                     <a href="#contact">Contato</a>
                 </div>
 
@@ -47,7 +48,7 @@
                 <a href="#services">Serviços</a>
                 <a href="#projects">Projetos</a>
                 <a href="#about">Processo</a>
-                <a href="#testimonials">Clientes</a>
+                <a href="#process">Processo</a>
                 <a href="#contact">Contato</a>
                 <a href="#contact" class="nav-cta"><span>Começar Projeto</span></a>
             </div>
@@ -68,7 +69,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <div class="hero-badge">
-                        Disponível para novos projetos
+                        Estratégia para marcas em movimento
                     </div>
 
                     <h1 class="hero-title">
@@ -78,8 +79,7 @@
                     </h1>
 
                     <p class="hero-description">
-                        Na Nyxsen, construímos produtos digitais que unem estratégia, design e tecnologia para
-                        transformar marcas em referências no mundo digital.
+                        Criamos posicionamento, experiências e campanhas que fazem sua marca ser lembrada — e escolhida.
                     </p>
 
                     <div class="hero-actions">
@@ -109,8 +109,8 @@
                         </div>
                         <div class="hero-ring hero-ring-2"></div>
 
-                        <div class="hero-n">
-                            <img src="img/N.png" alt="N">
+                            <div class="hero-n" aria-hidden="true">
+                            <span>SN</span>
                         </div>
                     </div>
                 </div>
@@ -303,8 +303,8 @@
 
 
             <h3 class="about-heading">
-                <span class="accent">Nyxsen.</span><br>
-                Criamos presença digital com propósito.
+                <span class="accent">Estúdio Norte.</span><br>
+                Estratégia que vira presença e presença que vira negócio.
             </h3>
 
             <p class="about-text">
@@ -357,7 +357,6 @@
                 <button class="filter-btn" data-filter="web">Web</button>
                 <button class="filter-btn" data-filter="design">Design gráfico</button>
                 <button class="filter-btn" data-filter="brand">Branding</button>
-                <button class="filter-btn" data-filter="saas">SaaS</button>
             </div>
 
             <div class="projects-grid reveal">
@@ -505,35 +504,7 @@
 
 
                 <article class="project-card" data-cat="saas">
-                    <div class="project-bg"></div>
-                    <div class="project-deco"></div>
-
-                    <div class="project-overlay">
-                        <div class="project-meta">
-                            <span class="project-cat">SaaS</span>
-                            <span class="project-status">Em Produção/Em breve</span>
-
-
-
-                        </div>
-                        <h3>Sistema de administração Condominial</h3>
-                        <p>
-                            EM BREVE
-                        </p>
-                        <!-- 
-                        <div class="project-tags">
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>Dashboard</span>
-                        </div> -->
-                    </div>
-
-                    <a href="#" class="project-link" aria-label="Ver projeto">
-                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 13L13 3M13 3H7M13 3v6" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
+                     <h2 style="text-align: center; margin-top: 35%; color: #333;">Em breve...</h2>
                 </article>
             </div>
         </div>
@@ -542,28 +513,6 @@
     <!-- ============================
        STATS BAND
   ============================= -->
-    <div id="stats-band">
-        <div class="container">
-            <div class="stats-band-grid">
-                <div class="stats-band-item">
-                    <div class="num"><span data-count="20">0</span>+</div>
-                    <div class="lbl">Projetos Entregues</div>
-                </div>
-                <div class="stats-band-item">
-                    <div class="num"><span data-count="18">0</span>+</div>
-                    <div class="lbl">Clientes Ativos</div>
-                </div>
-                <div class="stats-band-item">
-                    <div class="num"><span data-count="340">0</span>%</div>
-                    <div class="lbl">Aumento Médio em Conversão</div>
-                </div>
-                <div class="stats-band-item">
-                    <div class="num"><span data-count="4.9">0</span>/5</div>
-                    <div class="lbl">Avaliação Média</div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- ============================
        ABOUT / PROCESS
@@ -644,8 +593,7 @@
             </div>
         </div>
     </section>
-    <!-- 
-    <!-- ============================
+    <!--  ============================
        TESTIMONIALS
   ============================= -->
     <!-- <section id="testimonials" class="section">
@@ -653,7 +601,7 @@
             <div class="reveal">
                 <div class="section-label">Depoimentos</div>
                 <h2 class="section-title">O que nossos <span class="accent">clientes dizem</span></h2>
-                <p class="section-subtitle">Resultados reais de parceiros que confiaram na Nyxsen para
+                <p class="section-subtitle">Uma apresentação pronta para receber os resultados e depoimentos da sua agência.
                     transformar
                     sua
                     presença digital.</p>
@@ -663,7 +611,7 @@
                 <div class="testimonial-card reveal delay-1">
                     <div class="testimonial-stars">★★★★★</div>
                     <div class="testimonial-quote">"</div>
-                    <p class="testimonial-text">A Nyxsen transformou completamente nossa presença
+                    <p class="testimonial-text">O Estúdio Norte transformou completamente nossa presença
                         digital. O novo
                         e-commerce aumentou nossas vendas em mais de 300% nos primeiros 90 dias.
                         Trabalho impecável
@@ -681,7 +629,7 @@
                 <div class="testimonial-card reveal delay-2">
                     <div class="testimonial-stars">★★★★★</div>
                     <div class="testimonial-quote">"</div>
-                    <p class="testimonial-text">Contratamos a Nyxsen para redesenhar nosso app e o
+                    <p class="testimonial-text">Contratamos o Estúdio Norte para redesenhar nosso app e o
                         resultado foi
                         além
                         do esperado. Interface linda, performance incrível e zero bugs no lançamento.
@@ -700,7 +648,7 @@
                 <div class="testimonial-card reveal delay-3">
                     <div class="testimonial-stars">★★★★★</div>
                     <div class="testimonial-quote">"</div>
-                    <p class="testimonial-text">O branding que a Nyxsen criou para nós redefiniu como
+                    <p class="testimonial-text">O branding que o Estúdio Norte criou para nós redefiniu como
                         nossos
                         clientes
                         nos percebem. Profissionalismo no nível máximo, entrega pontual e resultado que
@@ -752,7 +700,7 @@
                             </div>
                             <div class="contact-info-text">
                                 <div class="ci-label">E-mail</div>
-                                <div class="ci-value">teamnyxsen@gmail.com</div>
+                                <div class="ci-value">ola@suaagencia.com.br</div>
                             </div>
                         </div>
                         <div class="contact-info-item">
@@ -841,7 +789,7 @@
                             <label class="consent-label">
                                 <input type="checkbox" name="consentimento" value="sim" required>
                                 <span>
-                                    Concordo com o envio dos meus dados para contato da equipe Nyxsen e
+                                    Concordo com o envio dos meus dados para contato da equipe responsável e
                                     li a
                                     <a href="pages/privacidade.html" target="_blank">Política de
                                         Privacidade</a>.
@@ -879,8 +827,8 @@
                 <div class="footer-brand">
 
                     <div class="footer-logo">
-                        <span class="logo-main">Nyxsen</span>
-                        <span class="logo-sub">Digital</span>
+                        <span class="logo-main">Estúdio Norte</span>
+                        <span class="logo-sub">Estratégia digital</span>
                     </div>
 
                     <p>
@@ -889,7 +837,7 @@
                     </p>
 
                     <div class="footer-socials">
-                        <a href="https://www.instagram.com/nyxsen_agencia" class="social-btn" aria-label="Instagram">
+                        <a href="#contact" class="social-btn" aria-label="Instagram">
                             IG
                         </a>
 
@@ -932,7 +880,7 @@
             <div class="footer-bottom">
 
                 <p>
-                    © 2026 Nyxsen. Todos os direitos reservados.
+                    © 2026 Estúdio Norte. Template demonstrativo para agências.
                 </p>
 
 
